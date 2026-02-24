@@ -1,11 +1,12 @@
+// segtree
 struct SegTree {
-    int n;
+    int n; 
     vector<long long> st, lazy;
 
     SegTree(int n): n(n) {
         st.assign(4*n, 0);
         lazy.assign(4*n, 0);
-    }
+    }   
 
     void build(int node, int l, int r, const vector<long long>& a) {
         if (l == r) {

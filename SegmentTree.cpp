@@ -2,8 +2,8 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
- 
-const int inf = 1e9;
+#define int long long
+const int inf = 1e18;
  
 struct SegTree{
 	vector<int> seg;
@@ -79,7 +79,7 @@ struct SegTree{
 // <= x;
 // 1 3 6 8
  
-int main(){
+signed main(){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 	int n,q; cin>>n>>q;
